@@ -1,0 +1,188 @@
+{
+  "version": "3.0.0",
+  "scripts": [
+    {
+      "id": "daily",
+      "name": "日常任务",
+      "description": "自动完成每日签到、任务、免费召唤、商店、好友和寮贡献",
+      "templates": ["sign_in", "mission_button", "claim_reward", "free_summon", "free_item", "kiss_button", "contribute_button", "contribute_confirm"],
+      "defaultConfig": {},
+      "requiresGame": true
+    },
+    {
+      "id": "huntu",
+      "name": "御魂副本",
+      "description": "自动刷御魂副本，支持指定层数和八岐大蛇",
+      "templates": ["soul_zone_icon", "floor_1", "floor_2", "floor_3", "floor_4", "floor_5", "floor_6", "floor_7", "floor_8", "floor_9", "floor_10", "floor_11", "orochi_tab", "start_battle", "victory", "defeat", "defeat_ok", "reward_ok"],
+      "defaultConfig": {
+        "floor": 11,
+        "orochi": false,
+        "count": 50
+      },
+      "requiresGame": true
+    },
+    {
+      "id": "baigui",
+      "name": "百鬼夜行",
+      "description": "自动百鬼夜行，优先砸SSR/SP式神",
+      "templates": ["baigui_icon", "start_baigui", "ssr_target", "target", "ok"],
+      "defaultConfig": {
+        "tickets": 10
+      },
+      "requiresGame": true
+    },
+    {
+      "id": "getu",
+      "name": "觉醒副本",
+      "description": "自动刷觉醒副本，支持火/风/水/雷四种属性",
+      "templates": ["awakening_icon", "element_fire", "element_water", "element_wind", "element_thunder", "floor_1", "floor_2", "floor_3", "floor_4", "floor_5", "floor_6", "floor_7", "floor_8", "floor_9", "floor_10", "start_battle", "victory", "reward_ok"],
+      "defaultConfig": {
+        "element": "fire",
+        "floor": 10,
+        "count": 30
+      },
+      "requiresGame": true
+    },
+    {
+      "id": "liaotu",
+      "name": "御灵副本",
+      "description": "自动刷御灵副本，支持神龙/白藏主/黑豹/孔雀",
+      "templates": ["beast_zone_icon", "beast_dragon", "beast_hakuzosu", "beast_panther", "beast_peacock", "floor_1", "floor_2", "floor_3", "start_battle", "victory", "reward_ok"],
+      "defaultConfig": {
+        "beast": "dragon",
+        "floor": 3,
+        "count": 20
+      },
+      "requiresGame": true
+    },
+    {
+      "id": "yeyuanhuo",
+      "name": "业原火",
+      "description": "自动刷业原火副本",
+      "templates": ["yeyuanhuo_icon", "floor_1", "floor_2", "floor_3", "start_battle", "victory", "reward_ok"],
+      "defaultConfig": {
+        "floor": 3,
+        "count": 20
+      },
+      "requiresGame": true
+    },
+    {
+      "id": "world_repeat",
+      "name": "世界复读",
+      "description": "在世界频道自动复读消息",
+      "templates": ["chat_button", "world_tab", "chat_input", "send_button"],
+      "defaultConfig": {
+        "message": "互助互赞",
+        "interval": 15,
+        "count": 100
+      },
+      "requiresGame": true
+    },
+    {
+      "id": "hunting",
+      "name": "狩猎战",
+      "description": "自动参与寮狩猎战",
+      "templates": ["guild", "hunting_entrance", "enter_hunting", "event_battle", "event_reward", "challenge_boss", "victory", "reward_ok"],
+      "defaultConfig": {
+        "count": 10
+      },
+      "requiresGame": true
+    },
+    {
+      "id": "xuanshang",
+      "name": "悬赏封印",
+      "description": "自动接受和完成悬赏封印任务",
+      "templates": ["explore", "xuanshang_icon", "accept_xuanshang", "confirm", "goto_target", "start_battle", "back", "ok"],
+      "defaultConfig": {},
+      "requiresGame": true
+    },
+    {
+      "id": "jiyang",
+      "name": "结界卡寄养",
+      "description": "自动在好友结界中寄养式神",
+      "templates": ["explore", "jie_jie_icon", "friend_jie_jie", "empty_slot", "taigu_tab", "douyu_tab", "confirm_place", "ok"],
+      "defaultConfig": {
+        "use_taigu": true
+      },
+      "requiresGame": true
+    },
+    {
+      "id": "xiaozhiren",
+      "name": "庭院小纸人",
+      "description": "自动点击庭院小纸人领取奖励",
+      "templates": ["paper_doll", "reward_item", "close", "home"],
+      "defaultConfig": {},
+      "requiresGame": true
+    },
+    {
+      "id": "yinjie",
+      "name": "阴界之门",
+      "description": "自动挑战阴界之门，可指定目标层数",
+      "templates": ["guild", "yinjie_entrance", "start_battle", "victory", "reward_ok", "ok"],
+      "defaultConfig": {
+        "target_floor": 50
+      },
+      "requiresGame": true
+    },
+    {
+      "id": "fengmo",
+      "name": "逢魔之时",
+      "description": "自动完成逢魔之时探索和BOSS战",
+      "templates": ["explore", "fengmo_icon", "event_battle", "event_reward", "boss_entrance", "challenge_boss", "victory", "reward_ok"],
+      "defaultConfig": {
+        "exploration": true,
+        "boss": true
+      },
+      "requiresGame": true
+    },
+    {
+      "id": "summon",
+      "name": "召唤狗粮",
+      "description": "自动召唤式神获取狗粮",
+      "templates": ["summon", "explore", "summon_icon", "ticket_summon", "jade_summon", "summon_button", "skip", "close"],
+      "defaultConfig": {
+        "count": 50,
+        "use_ticket": true
+      },
+      "requiresGame": true
+    },
+    {
+      "id": "tanshigui",
+      "name": "贪食鬼吃御魂",
+      "description": "自动用贪食鬼吃御魂升级",
+      "templates": ["shikigami", "tanshigui_tab", "feed_button", "confirm", "ok"],
+      "defaultConfig": {
+        "count": 100
+      },
+      "requiresGame": true
+    },
+    {
+      "id": "upselect",
+      "name": "UP选择",
+      "description": "自动选择UP概率式神",
+      "templates": ["summon", "explore", "summon_icon", "up_select_tab", "up_sp", "up_ssr", "confirm_up", "ok"],
+      "defaultConfig": {
+        "targets": "sp,ssr"
+      },
+      "requiresGame": true
+    },
+    {
+      "id": "fengmo_answer",
+      "name": "逢魔答题",
+      "description": "自动参与逢魔之时答题",
+      "templates": ["explore", "fengmo_quiz_icon", "option_a", "option_1", "ok", "next"],
+      "defaultConfig": {
+        "count": 10
+      },
+      "requiresGame": true
+    },
+    {
+      "id": "reconnect",
+      "name": "卡死重连",
+      "description": "监控游戏状态，自动处理断线重连和卡死",
+      "templates": ["reconnect_button", "network_retry", "disconnect_ok", "back"],
+      "defaultConfig": {},
+      "requiresGame": true
+    }
+  ]
+}
